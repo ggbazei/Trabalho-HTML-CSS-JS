@@ -1,5 +1,6 @@
 <html>
    <head>
+		<script src="js.js"></script> 
         <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
@@ -7,7 +8,7 @@
             <legend>Efetuar Registro</legend> 
                 <div class="nome-data">
                     <div>
-                        <label for="nome">Nome:</label><br>
+                        <label>Nome:</label><br>
                         <input type="text" id="nome" />
                     </div>
                     <diV class="data">
@@ -16,15 +17,15 @@
                     </div>
                     </div>
                 <div>
-                    <label for="email">Email:</label><br>
+                    <label>Email:</label><br>
                     <input type="email" id="email" />
                 </div>
                 <div>
-                    <label for="senha">Senha:</label><br>
+                    <label>Senha:</label><br>
                     <input type="password" id="senha" />
                 </div>
                 <div>
-                    <label for="sexo">Sexo:</label><br>
+                    <label>Sexo:</label><br>
                     <select id='sexo' name='sexo'>
                         <option>Outros</option>
                         <option >Feminino</option>
@@ -32,78 +33,78 @@
                     </select>
                 </div>
                 <div>
-                    <label for="telefoneResidencial">Telefone Residencial:</label><br>
+                    <label>Telefone Residencial:</label><br>
                     <input type="tel" id="telefoneResidencial" />
                 </div>
                 <div>
-                    <label for="celular">Celular:</label><br>
+                    <label>Celular:</label><br>
                     <input type="tel" id="celular" />
                 </div>
                 <div>
-                    <label for="fumante">Fumante:</label><br>
-                    <select id='sexo' name='fumante'>
+                    <label>Fumante:</label><br>
+                    <select id='fumante' name='fumante'>
                         <option >Não</option>
                         <option selected>Sim</option>
                     </select>
                 </div>
                 <div>
-                    <label for="municipioOrigem">Municipio de origen:</label><br>
+                    <label>Municipio de origen:</label><br>
                     <input type="text" id="municipioOrigem" />
                 </div>
                 <div>
-                    <br><button class="button-esquerda"  type="button" value="Cancelar">Cancelar</button>
-                    <button class="button-direita" type="button" value="Gravar">Gravar</button>
+                    <br><button class="button-esquerda"  type="button" onclick="limpaCadastro()"  value="Cancelar">Cancelar</button>
+                    <button class="button-direita" onclick="cadastrar()" type="button" value="Gravar">Gravar</button>
                 </div>
         </fieldset class="containter-flex">
         <fieldset>
                 <legend>Dados</legend> 
                 <div class="nome-data">
                     <div>
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome"  disabled/>
+                        <label>Nome:</label><br>
+                        <input type="text" id="nomeDados"  disabled/>
                     </div>
                     <diV class="data">
-                        <label for="dataNascimento">Data nascimento:</label><br>
-                        <input type="date" id="dataNascimento"  disabled/>
+                        <label>Data nascimento:</label><br>
+                        <input type="date" id="dataNascimentoDados"  disabled/>
                     </div>
                     </div>
                 <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email"  disabled/>
+                    <label>Email:</label><br>
+                    <input type="email" id="emailDados"  disabled/>
                 </div>
                 <div>
-                    <label for="senha">Senha:</label><br>
-                    <input type="password" id="senha"  disabled/>
+                    <label>Senha:</label><br>
+                    <input type="password" id="senhaDados"  disabled/>
                 </div>
                 <div>
-                    <label for="sexo">Sexo:</label><br>
-                    <select id='sexo' name='sexo' disabled>
+                    <label>Sexo:</label><br>
+                    <select id='sexoDados' name='sexo' disabled>
                         <option>Outros</option>
                         <option >Feminino</option>
                         <option selected>Masculino</option>
                     </select>
                 </div>
                 <div>
-                    <label for="telefoneResidencial">Telefone Residencial:</label><br>
-                    <input type="tel" id="telefoneResidencial"  disabled/>
+                    <label>Telefone Residencial:</label><br>
+                    <input type="tel" id="telefoneResidencialDados"  disabled/>
                 </div>
                 <div>
-                    <label for="celular">Celular:</label><br>
-                    <input type="tel" id="celular"  disabled/>
+                    <label>Celular:</label><br>
+                    <input type="tel" id="celularDados"  disabled/>
                 </div>
                 <div>
-                    <label for="fumante">Fumante:</label><br>
-                    <select id='sexo' name='fumante' disabled>
+                    <label>Fumante:</label><br>
+                    <select id='fumanteDados' name='fumante' disabled>
                         <option >Não</option>
                         <option selected>Sim</option>
                     </select>
                 </div>
                 <div>
-                    <label for="municipioOrigem">Municipio de origen:</label><br>
-                    <input type="text" id="municipioOrigem" disabled/>
+                    <label>Municipio de origen:</label><br>
+                    <input type="text" id="municipioOrigemDados" disabled/>
                 </div>
                 <div>
-                    <br> <button class="button-esquerda"  type="button" value="Limpar" disabled>Limpar</button>
+                    <br> <button class="button-esquerda" onclick="limpaDados()" type="button" value="Limpar" >Limpar</button>
                 </div>
         </fieldset>
    </body>
